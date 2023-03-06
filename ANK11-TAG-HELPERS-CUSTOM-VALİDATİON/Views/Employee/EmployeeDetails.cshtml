@@ -1,0 +1,82 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .container {
+        background-color: chocolate;
+    }
+</style>
+
+<h1 class="text-center"> Employee Information</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+
+            <div>
+                <form asp-action="Employee">
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="Id"></label>
+                        <input class="form-control mb-2" asp-for="Id" placeholder="ID" />
+                    </div>
+
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="Name"></label>
+                        <input class="form-control mb-2" asp-for="Name" placeholder="Employee Name" />
+                    </div>
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="LastName"></label>
+                        <input class="form-control mb-2" asp-for="LastName" placeholder="Employee Lastname" />
+                    </div>
+
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="Email"></label>
+                        <input class="form-control mb-2" asp-for="Email" placeholder="E-Mail" />
+                    </div>
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="PhoneNumber"></label>
+                        <input class="form-control mb-2" asp-for="PhoneNumber" placeholder="Phone Number" />
+                    </div>
+
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="Age"></label>
+                        <input class="form-control mb-2" asp-for="Age" placeholder="Age" />
+                        @*@Html.Label("Age:")
+                        @Html.TextBoxFor(x=>x.Age)
+                        @Html.ValidationMessageFor(x=>x.Age,"*")
+                        *@
+                    </div>
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="DateOfBirth"></label>
+                        <input class="form-control mb-2" asp-for="DateOfBirth" placeholder="Date Of Birth" />
+                    </div>
+
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="DateOfRecruitment"></label>
+                        <input class="form-control mb-2" asp-for="DateOfRecruitment" placeholder="Date Of Recruitment" />
+                    </div>
+                    <div class="alert-warning">
+                        <label class="form-label" asp-for="Salary"></label>
+                        <input class="form-control mb-2" asp-for="Salary" placeholder="Salary" />
+                    </div>
+
+
+                    <div>
+                        <label class="form-label" asp-for="GenderType"></label>
+                        <select class="dropdown-menu-start ms-3 " asp-for="GenderType" asp-items="@(Html.GetEnumSelectList<GenderType>())"> </select>
+                    </div>
+
+                    <div class="alert-warning">
+                        <input class="mt-4 btn-danger p-2" type="submit" value="New Employee" />
+                    </div>
+                    <div class="mt-5 text-danger" asp-validation-summary="All"></div>
+
+
+                </form>
+
+            </div>
+        </div>
+        <div class="col-md-2"> @ViewBag.postback</div>
+    </div>
+</div>

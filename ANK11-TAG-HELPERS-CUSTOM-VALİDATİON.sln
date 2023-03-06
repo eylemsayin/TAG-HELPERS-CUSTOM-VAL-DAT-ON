@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANK11-TAG-HELPERS-CUSTOM-VALİDATİON", "ANK11-TAG-HELPERS-CUSTOM-VALİDATİON\ANK11-TAG-HELPERS-CUSTOM-VALİDATİON.csproj", "{401847F0-4BE8-45DE-8FE0-4481C3922747}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{401847F0-4BE8-45DE-8FE0-4481C3922747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401847F0-4BE8-45DE-8FE0-4481C3922747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401847F0-4BE8-45DE-8FE0-4481C3922747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401847F0-4BE8-45DE-8FE0-4481C3922747}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {049EF9A3-F8BA-41C7-B0B4-257527827783}
+	EndGlobalSection
+EndGlobal
